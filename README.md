@@ -6,35 +6,19 @@ This example shows how to implement integration tests using [Express](https://ex
 
 ### 1. Download example and install dependencies
 
-Download this example:
+```
+git clone git@github.com:tyrauber/prisma-lts-alpine.git
+cd prisma-lts-alpine
+yarn
 
 ```
-curl https://codeload.github.com/prisma/prisma-examples/tar.gz/latest | tar -xz --strip=2 prisma-examples-latest/typescript/testing-express
-```
 
-Install npm dependencies:
+Build and run the docker image:
 
 ```
-cd testing-express
-npm install
+yarn image:build
+yarn image:start
 ```
-
-<details><summary><strong>Alternative:</strong> Clone the entire repo</summary>
-
-Clone this repository:
-
-```
-git clone git@github.com:prisma/prisma-examples.git --depth=1
-```
-
-Install npm dependencies:
-
-```
-cd prisma-examples/typescript/testing-express
-npm install
-```
-
-</details>
 
 ### 2. Create and seed the database
 
